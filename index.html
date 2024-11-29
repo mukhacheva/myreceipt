@@ -1,0 +1,75 @@
+<!-- Указываем тип документа -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Устанавливаем кодировку -->
+    <meta charset="UTF-8">
+    <!-- Заголовок страницы -->
+    <title>рецепты</title>
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключение шрифта с Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <!-- Логотип сайта -->
+    <div class="header__logo"><p>моирецепты</p></div>
+    <!-- Навигационное меню -->
+    <nav class="nav">
+        <div class="topnav" id="myTopnav">
+            <a href="#">ГЛАВНАЯ</a>
+            <a href="#">РЕЦЕПТЫ</a>
+            <a href="#">ЛАЙФХАКИ</a>
+            <!-- Кнопка для адаптивного меню -->
+            <a href="#" id="menu" class="icon">&#9776;</a>
+        </div>
+    </nav>
+    <!-- Ссылки для авторизации -->
+    <div class="auth-links">
+        <a href="#">ВХОД</a>
+        <a href="#">РЕГИСТРАЦИЯ</a>
+    </div>
+</header>
+<main>
+    <!-- Изображение на главной странице -->
+    <img src="1.JPG" style="position: relative; top: -95px;">
+    <div class="main__welcome">
+        <!-- Заголовок с подсветкой -->
+        <h1>Думаете, что <span class="приготовить">приготовить?</span></h1>
+        <!-- Описание -->
+        <p>Найдите вдохновение для вкусных и простых блюд! На нашем сайте вы найдете рецепты, которые легко 
+        приготовить даже на ограниченном бюджете. Будь то уютный вечер с друзьями или быстрый обед перед учёбой — 
+        у нас есть идеи, которые подарят вам тепло и радость домашней кухни. Давайте готовить вместе!</p>
+        <!-- Поле поиска -->
+        <div class="search-bar">
+    <span class="search-icon"><img src="lupa.PNG" alt="Иконка поиска"></span>
+    <input type="text" placeholder="Что хотите приготовить?">
+</div>
+    </div>
+</main>
+<!-- Подвал сайта -->
+<div class="footer">
+	<div class="topnav_footer1">
+		<a href="#"><img src="tg.PNG"></a>
+		<a href="#"><img src="wk.PNG"></a>
+		<a href="#"><img src="pin.PNG"></a>
+	</div>
+    <nav>
+        <div class="topnav_footer">
+            <a href="#">Контакты</a>
+            <a href="#">О нас</a>
+            <a href="#">Реклама</a>
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+    </nav>
+        <div class="topnav_footer2">
+        <a href="#">FAQ</a>
+    </div>
+</div>
+<!-- Подключение JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
