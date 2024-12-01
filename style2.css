@@ -64,7 +64,7 @@ header, .header2 {
 
 .time-line {
     width: 100vw; /* Ширина линии на всю ширину экрана */
-    height: 2px; /* Толщина линии */
+    height: 0.5px; /* Толщина линии */
     background-color: black; /* Черный цвет линии */
     margin: 10px 0; /* Отступы сверху и снизу для линии */
     position: relative; /* Чтобы линии не перекрывали текст */
