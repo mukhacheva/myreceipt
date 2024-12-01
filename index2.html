@@ -1,63 +1,62 @@
-<!-- Указываем тип документа -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <!-- Устанавливаем кодировку -->
     <meta charset="UTF-8">
-    <!-- Заголовок страницы -->
     <title>рецепты</title>
-    <!-- Подключение CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- Подключение шрифта с Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <!-- Логотип сайта -->
-    <div class="header__logo"><p>моирецепты</p></div>
-    <!-- Навигационное меню -->
-    <nav class="nav">
-        <div class="topnav" id="myTopnav">
-            <a href="index.html#section2">ГЛАВНАЯ</a>
-            <a href="#">РЕЦЕПТЫ</a>
-            <a href="#">ЛАЙФХАКИ</a>
-            <!-- Кнопка для адаптивного меню -->
-            <a href="#" id="menu" class="icon">&#9776;</a>
+    <div class="main-container"> <!-- Общий контейнер для header, изображения и полоски -->
+        <!-- Шапка -->
+        <header>
+            <div class="header__logo"><p>моирецепты</p></div>
+            <nav class="nav">
+                <div class="topnav" id="myTopnav">
+                    <a href="index.html#section2">ГЛАВНАЯ</a>
+                    <a href="#">РЕЦЕПТЫ</a>
+                    <a href="#">ЛАЙФХАКИ</a>
+                    <a href="#" id="menu" class="icon">&#9776;</a>
+                </div>
+            </nav>
+            <div class="auth-links">
+                <a href="#">ВХОД</a>
+                <a href="#">РЕГИСТРАЦИЯ</a>
+            </div>
+        </header>
+
+        <!-- Изображение -->
+        <img src="1.JPG" style="position: relative; top: -203px; width: 100%; height: auto;">
+
+        <!-- Жёлтая полоска с текстом -->
+        <div class="info-section">
+            <div class="info-item">время приготовления</div>
+            <div class="info-item double">возможные блюда</div>
         </div>
-    </nav>
-    <!-- Ссылки для авторизации -->
-    <div class="auth-links">
-        <a href="#">ВХОД</a>
-        <a href="#">РЕГИСТРАЦИЯ</a>
     </div>
-</header>
-<main>
-    <!-- Изображение на главной странице -->
-    <img src="1.JPG" style="position: relative; top: -203px;">
-    
-</main>
-<!-- Подвал сайта -->
-<div class="footer">
-    <div class="topnav_footer1">
-        <a href="https://t.me/kvatyatish"><img src="tg.PNG"></a>
-        <a href="https://vk.com/greenherring"><img src="wk.PNG"></a>
-        <a href="https://ru.pinterest.com/pin/3940718419144610/"><img src="pin.PNG"></a>
-    </div>
-    <nav>
-        <div class="topnav_footer">
-            <a href="https://sendpulse.com/ru/blog/about-us-page">Контакты</a>
-            <a href="https://sendpulse.com/ru/blog/about-us-page">О нас</a>
-            <a href="https://ru.wikipedia.org/wiki/Реклама">Реклама</a>
-            <a href="https://tilda.cc/ru/privacy-generator/">Политика конфиденциальности</a>
+
+    <!-- Подвал -->
+    <div class="footer">
+        <div class="topnav_footer1">
+            <a href="https://t.me/kvatyatish"><img src="tg.PNG"></a>
+            <a href="https://vk.com/greenherring"><img src="wk.PNG"></a>
+            <a href="https://ru.pinterest.com/pin/3940718419144610/"><img src="pin.PNG"></a>
         </div>
-    </nav>
+        <nav>
+            <div class="topnav_footer">
+                <a href="https://sendpulse.com/ru/blog/about-us-page">Контакты</a>
+                <a href="https://sendpulse.com/ru/blog/about-us-page">О нас</a>
+                <a href="https://ru.wikipedia.org/wiki/Реклама">Реклама</a>
+                <a href="https://tilda.cc/ru/privacy-generator/">Политика конфиденциальности</a>
+            </div>
+        </nav>
         <div class="topnav_footer2">
-        <a href="https://youtu.be/Tmr-BUALxLg?si=utxfu5b5PZQCK0aU">FAQ</a>
+            <a href="https://youtu.be/Tmr-BUALxLg?si=utxfu5b5PZQCK0aU">FAQ</a>
+        </div>
     </div>
-</div>
-<!-- Подключение JavaScript -->
-<script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -87,6 +87,14 @@ header {
     text-transform: uppercase; /* Преобразование текста в верхний регистр */
 }
 
+/* === СТИЛИ ДЛЯ ОБЩЕГО КОНТЕЙНЕРА === */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем все элементы */
+    width: 100%; /* Контейнер занимает всю ширину */
+}
+
 /* === СТИЛИ ДЛЯ ОСНОВНОЙ ЧАСТИ (MAIN) === */
 main {
     display: flex;
@@ -140,7 +148,28 @@ main .main__welcome h1 {
     padding: 20px; /* Отступы вокруг контента */
 }
 
+/* === СТИЛИ ДЛЯ ЖЁЛТОЙ ПОЛОСКИ === */
+.info-section {
+    display: flex;
+    background-color: #F4DE6F;
+    color: #3F1E54;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
 
+.info-item {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+}
+
+.info-item.double {
+    flex: 2;
+}
 
 /* === СТИЛИ ДЛЯ ПОДВАЛА (FOOTER) === */
 .footer {
