@@ -15,3 +15,23 @@
     margin: 0;
     overflow: hidden;
 }
+
+/* Шапка */
+header, .header2 {
+    min-height: 50px; /* Устанавливаем высоту шапки 50px */
+    display: flex; /* Используем flex для горизонтального выравнивания */
+    align-items: center; /* Центрируем элементы по вертикали */
+    justify-content: space-between; /* Распределяем элементы по краям */
+    padding: 0 20px; /* Отступы внутри шапки */
+    background: #A4B480; /* Цвет фона */
+}
+
+/* Футер */
+.footer {
+    height: 50px; /* Устанавливаем высоту футера 50px */
+    display: flex; /* Используем flex для горизонтального выравнивания */
+    align-items: center; /* Центрируем элементы по вертикали */
+    justify-content: space-between; /* Распределяем элементы по краям */
+    padding: 0 20px; /* Отступы внутри футера */
+    background: #A4B480; /* Цвет фона */
+}

@@ -33,9 +33,9 @@ header {
 }
 
 .header2 {
+    min-height: 50px;
     display: flex; /* Располагаем элементы горизонтально */
     width: 100%; /* Растягиваем на всю ширину экрана */
-    min-height: 50px; /* Устанавливаем высоту шапки */
     align-items: center; /* Центрируем элементы по вертикали */
     justify-content: space-between; /* Распределяем элементы по краям */
     padding: 0 20px; /* Отступы внутри шапки */
