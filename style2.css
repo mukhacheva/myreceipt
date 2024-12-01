@@ -68,6 +68,8 @@ header, .header2 {
 .time-list p {
     font-family: 'Balsamiq Sans', sans-serif;
     font-size: 16px;
+    font-weight: bold;
+    color: #3F1E54;
     margin: 0; /* Убираем маргины для выравнивания */
 }
 
