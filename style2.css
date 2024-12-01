@@ -44,7 +44,7 @@ header, .header2 {
 }
 
 .time-list {
-    width: 33%; /* 33% ширины экрана */
+    width: 33%; /* Ширина на 33% экрана */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Центрируем по вертикали */
@@ -57,16 +57,20 @@ header, .header2 {
 .time-list p {
     font-family: 'Balsamiq Sans', sans-serif;
     font-size: 16px;
+    font-weight: bold;
+    color: #3F1E54;
     margin: 0; /* Убираем маргины для выравнивания */
 }
 
 .time-line {
-    width: 100%; /* Линия на всю ширину экрана */
+    width: 100vw; /* Ширина линии на всю ширину экрана */
     height: 2px; /* Толщина линии */
     background-color: black; /* Черный цвет линии */
     margin: 10px 0; /* Отступы сверху и снизу для линии */
+    position: relative; /* Чтобы линии не перекрывали текст */
+    left: 100%; /* Смещаем линию влево */
+    margin-left: 70px;
 }
-
 
 /* Футер */
 .footer {
