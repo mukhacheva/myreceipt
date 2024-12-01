@@ -37,17 +37,6 @@ header, .header2 {
     );
 }
 
-.main {
-    display: flex; /* Используем flex для расположения двух блоков рядом */
-    width: 100%;
-    height: 500px; /* Высота контейнера main */
-    background: linear-gradient(to right, 
-        #F6EEB6 33%, 
-        #EFF5E4 33%, 
-        #EFF5E4 100%
-    );
-}
-
 .main-content {
     display: flex; /* Размещаем два блока рядом */
     width: 100%;
@@ -62,15 +51,20 @@ header, .header2 {
     align-items: center; /* Центрируем по горизонтали */
     padding: 20px;
     height: 100%; /* Растягиваем высоту на весь экран */
-    gap: 90px; /* Расстояние 20 пикселей между элементами */
+    gap: 40px; /* Расстояние 20 пикселей между элементами */
 }
 
 .time-list p {
     font-family: 'Balsamiq Sans', sans-serif;
     font-size: 16px;
-    font-weight: bold;
-    color: #3F1E54;
     margin: 0; /* Убираем маргины для выравнивания */
+}
+
+.time-line {
+    width: 100%; /* Линия на всю ширину экрана */
+    height: 2px; /* Толщина линии */
+    background-color: black; /* Черный цвет линии */
+    margin: 10px 0; /* Отступы сверху и снизу для линии */
 }
 
 
