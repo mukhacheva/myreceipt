@@ -26,6 +26,16 @@ header, .header2 {
     background: #A4B480; /* Цвет фона */
 }
 
+.main {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to right, 
+        #F6EEB6 33%, /* Жёлтый до 33% */
+        #EFF5E4 33%, /* Зелёный начинается сразу после 33% */
+        #EFF5E4 100% /* Зелёный до конца (включает оставшиеся 67%) */
+    );
+}
+
 /* Футер */
 .footer {
     height: 50px; /* Устанавливаем высоту футера 50px */

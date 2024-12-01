@@ -108,6 +108,7 @@ header {
 }
 
 /* === СТИЛИ ДЛЯ ОСНОВНОЙ ЧАСТИ (MAIN) === */
+
 main {
     display: flex;
     flex-direction: column;
