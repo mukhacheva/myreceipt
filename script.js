@@ -6,6 +6,8 @@ document.getElementById('menu').onclick = function () {
 // Универсальная функция для переключения видимости меню
 function toggleMenu(menuId) {
     const menu = document.getElementById(menuId);
+    
+    // Если меню скрыто или не видно, показываем его
     if (menu.style.display === "none" || menu.style.display === "") {
         menu.style.display = "flex";  // Показываем меню
     } else {
@@ -22,7 +24,3 @@ document.addEventListener("click", function (event) {
         }
     });
 });
-
-
-
-
