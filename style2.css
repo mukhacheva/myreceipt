@@ -55,6 +55,8 @@ header, .header2 {
     color: #3F1E54;
     justify-content: center; /* Центрируем ссылки */
     margin-left: 25px;
+    position: relative;
+    top: 0; /* Меню будет фиксированным в пределах родителя */
 }
 
 .time-list {
@@ -65,7 +67,7 @@ header, .header2 {
     align-items: center; /* Центрируем по горизонтали */
     padding: 20px;
     height: 100%; /* Растягиваем высоту на весь экран */
-    gap: 40px; /* Расстояние 20 пикселей между элементами */
+    gap: 40px; 
 }
 
 .time-list p {
@@ -127,4 +129,40 @@ header, .header2 {
     justify-content: space-between; /* Распределяем элементы по краям */
     padding: 0 20px; /* Отступы внутри футера */
     background: #A4B480; /* Цвет фона */
+}
+
+@media screen and (max-width: 1000px) {
+    .menu {
+        gap: 90px; /* Пробелы между ссылками при уменьшении экрана */
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .menu {
+        gap: 87px; /* Пробелы между ссылками при уменьшении экрана */
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .menu {
+        gap: 85px; /* Пробелы между ссылками при уменьшении экрана */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .menu {
+        gap: 80px; /* Пробелы между ссылками при уменьшении экрана */
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .menu {
+        gap: 80px; /* Пробелы между ссылками при уменьшении экрана */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        gap: 75px; /* Пробелы между ссылками при уменьшении экрана */
+    }
 }
