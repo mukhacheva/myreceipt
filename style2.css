@@ -129,6 +129,34 @@ header, .header2 {
   margin-right: 30px; /* Добавляем пробел после определённых слов */
 }
 
+/* Стили для скрытого меню */
+.dropdown-menu {
+    display: none; /* Скрыть по умолчанию */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 50px; /* Позиционирование под кнопкой */
+    left: 0;
+    width: 100%; /* Ширина на весь экран */
+    background-color: #EFF5E4; /* Фон меню */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для визуального эффекта */
+    z-index: 10; /* Обеспечиваем, чтобы меню было поверх других элементов */
+    flex-direction: column; /* Вертикальное расположение элементов */
+    align-items: center;
+    gap: 10px; /* Отступы между ссылками */
+}
+
+.dropdown-menu a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3F1E54;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    text-decoration: underline;
+}
+
+
 /* Футер */
 .footer {
     height: 50px; /* Устанавливаем высоту футера 50px */
