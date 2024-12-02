@@ -125,11 +125,6 @@ header, .header2 {
     align-self: center; /* Центрируем кнопку по горизонтали */
 }
 
-.space {
-  margin-right: 30px; /* Добавляем пробел после определённых слов */
-}
-
-/* Стили для скрытого меню */
 .dropdown-menu {
     display: none; /* Скрыть по умолчанию */
     position: absolute; /* Абсолютное позиционирование */
@@ -142,11 +137,11 @@ header, .header2 {
     z-index: 10; /* Обеспечиваем, чтобы меню было поверх других элементов */
     flex-direction: column; /* Вертикальное расположение элементов */
     align-items: center;
-    gap: 10px; /* Отступы между ссылками */
+    gap: 20px; /* Отступы между ссылками */
 }
 
 .dropdown-menu a {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     color: #3F1E54;
     text-decoration: none;
@@ -156,6 +151,9 @@ header, .header2 {
     text-decoration: underline;
 }
 
+.space {
+  margin-right: 30px; /* Добавляем пробел после определённых слов */
+}
 
 /* Футер */
 .footer {
