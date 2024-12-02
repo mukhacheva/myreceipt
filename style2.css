@@ -126,18 +126,20 @@ header, .header2 {
 }
 
 .dropdown-menu {
-    display: none; /* Скрыть по умолчанию */
+    display: none; /* Скрыто по умолчанию */
     position: absolute; /* Абсолютное позиционирование */
-    top: 50px; /* Позиционирование под кнопкой */
-    left: 0;
-    width: 100%; /* Ширина на весь экран */
+    top: 50px; /* Расположение ниже кнопки */
+    left: 50%; /* Центрирование меню */
+    transform: translateX(-50%); /* Смещаем влево на половину ширины */
+    width: 300px; /* Ширина меню */
     background-color: #EFF5E4; /* Фон меню */
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для визуального эффекта */
-    z-index: 10; /* Обеспечиваем, чтобы меню было поверх других элементов */
-    flex-direction: column; /* Вертикальное расположение элементов */
-    align-items: center;
-    gap: 20px; /* Отступы между ссылками */
+    padding: 20px; /* Внутренние отступы */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+    z-index: 10; /* Поверх других элементов */
+    display: flex; /* Используем flexbox для выравнивания */
+    flex-direction: column; /* Вертикальное расположение */
+    align-items: center; /* Центрирование по горизонтали */
+    gap: 20px; /* Расстояние между ссылками */
 }
 
 .dropdown-menu a {
