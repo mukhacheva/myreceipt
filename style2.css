@@ -94,14 +94,25 @@ header, .header2 {
     flex: 2;
     justify-content: center; /* Центрируем ссылки */
     gap: 100px; /* Пробелы между ссылками */
-    margin-right: 40px; 
-    text-align: right;
+    margin: 0;
 }
 
 .menu a {
     font-size: 14px; /* Размер текста */
     font-weight: bold; /* Жирный текст */
     color: #3F1E54; /* Цвет текста (тёмно-фиолетовый) */
+    position: relative;
+}
+
+.menu a::before {
+    content: "·"; /* Символ точки */
+    font-size: 28px; /* Увеличиваем размер точки */
+    font-weight: bold; /* Толще */
+    color: #3F1E54; /* Цвет точки */
+    position: absolute; /* Абсолютное позиционирование для правильного размещения */
+    left: -10px; /* Размещаем точку слева от текста */
+    top: 50%; /* Центрируем по вертикали относительно текста */
+    transform: translateY(-50%); /* Центрируем точку */
 }
 
 .space {
