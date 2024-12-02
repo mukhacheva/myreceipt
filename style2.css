@@ -95,7 +95,7 @@ header, .header2 {
     align-items: center; /* Центрируем по горизонтали */
     flex: 2;
     justify-content: center; /* Центрируем ссылки */
-    gap: 100px; /* Пробелы между ссылками */
+    gap: 75px; /* Пробелы между ссылками */
     margin: 0;
 }
 
@@ -117,6 +117,14 @@ header, .header2 {
     transform: translateY(-50%); /* Центрируем точку */
 }
 
+.knopka {
+    position: relative;
+    margin-top: 10px; /* Отступ сверху, чтобы кнопка была немного ниже */
+    font-size: 15px;
+    cursor: pointer;
+    align-self: center; /* Центрируем кнопку по горизонтали */
+}
+
 .space {
   margin-right: 30px; /* Добавляем пробел после определённых слов */
 }
@@ -133,36 +141,6 @@ header, .header2 {
 
 @media screen and (max-width: 1000px) {
     .menu {
-        gap: 90px; /* Пробелы между ссылками при уменьшении экрана */
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .menu {
-        gap: 87px; /* Пробелы между ссылками при уменьшении экрана */
-    }
-}
-
-@media screen and (max-width: 850px) {
-    .menu {
-        gap: 85px; /* Пробелы между ссылками при уменьшении экрана */
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .menu {
-        gap: 80px; /* Пробелы между ссылками при уменьшении экрана */
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .menu {
-        gap: 80px; /* Пробелы между ссылками при уменьшении экрана */
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .menu {
-        gap: 75px; /* Пробелы между ссылками при уменьшении экрана */
+        gap: 60px; /* Пробелы между ссылками при уменьшении экрана */
     }
 }
