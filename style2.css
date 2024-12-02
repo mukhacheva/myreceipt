@@ -54,8 +54,7 @@ header, .header2 {
     font-family: 'Balsamiq Sans', sans-serif;
     color: #3F1E54;
     justify-content: center; /* Центрируем ссылки */
-    gap: 30px; /* Пробелы между ссылками */
-    margin-right: 40px; 
+    margin-left: 25px;
 }
 
 .time-list {
@@ -103,6 +102,10 @@ header, .header2 {
     font-size: 14px; /* Размер текста */
     font-weight: bold; /* Жирный текст */
     color: #3F1E54; /* Цвет текста (тёмно-фиолетовый) */
+}
+
+.space {
+  margin-right: 25px; /* Добавляем пробел после определённых слов */
 }
 
 /* Футер */
