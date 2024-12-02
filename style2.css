@@ -88,10 +88,13 @@ header, .header2 {
 }
 
 .menu {
-    display: flex; /* Располагаем ссылки в строку */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрируем по вертикали */
+    align-items: center; /* Центрируем по горизонтали */
     flex: 2;
     justify-content: center; /* Центрируем ссылки */
-    gap: 30px; /* Пробелы между ссылками */
+    gap: 100px; /* Пробелы между ссылками */
     margin-right: 40px; 
     text-align: right;
 }
