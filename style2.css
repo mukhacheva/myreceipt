@@ -153,6 +153,34 @@ header, .header2 {
     text-decoration: underline;
 }
 
+.dropdown-menu1 {
+    display: none; /* Скрыто по умолчанию */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 50px; /* Расположение ниже кнопки */
+    left: 50%; /* Центрирование меню */
+    transform: translateX(-50%); /* Смещаем влево на половину ширины */
+    width: 800px; /* Ширина меню */
+    background-color: #EFF5E4; /* Фон меню */
+    padding: 30px; /* Внутренние отступы */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+    z-index: 10; /* Поверх других элементов */
+    display: flex; /* Используем flexbox для выравнивания */
+    flex-direction: column; /* Вертикальное расположение */
+    align-items: center; /* Центрирование по горизонтали */
+    gap: 30px; /* Расстояние между ссылками */
+}
+
+.dropdown-menu1 a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #3F1E54;
+    text-decoration: none;
+}
+
+.dropdown-menu1 a:hover {
+    text-decoration: underline;
+}
+
 .space {
   margin-right: 30px; /* Добавляем пробел после определённых слов */
 }
