@@ -30,6 +30,8 @@ header, .header2 {
     display: flex; /* Используем flex для расположения двух блоков рядом */
     width: 100%;
     height: 500px; /* Высота контейнера main */
+    justify-content: space-between; /* Распределяем элементы по краям */
+    padding: 10px 20px; /* Отступы внутри хедера */
     background: linear-gradient(to right, 
         #F6EEB6 33%, 
         #EFF5E4 33%, 
@@ -39,8 +41,21 @@ header, .header2 {
 
 .main-content {
     display: flex; /* Размещаем два блока рядом */
+    justify-content: left;
     width: 100%;
     height: 100%; /* Растягиваем на всю высоту контейнера main */
+}
+
+.main-content2 {
+    width: 67%; /* Ширина на 67% экрана */
+    display: flex;
+    justify-content: center; /* Центрируем текст по горизонтали */
+    align-items: center; /* Центрируем текст по вертикали */
+    font-family: 'Balsamiq Sans', sans-serif;
+    color: #3F1E54;
+    justify-content: center; /* Центрируем ссылки */
+    gap: 30px; /* Пробелы между ссылками */
+    margin-right: 40px; 
 }
 
 .time-list {
@@ -70,6 +85,21 @@ header, .header2 {
     position: relative; /* Чтобы линии не перекрывали текст */
     left: 100%; /* Смещаем линию влево */
     margin-left: 70px;
+}
+
+.menu {
+    display: flex; /* Располагаем ссылки в строку */
+    flex: 2;
+    justify-content: center; /* Центрируем ссылки */
+    gap: 30px; /* Пробелы между ссылками */
+    margin-right: 40px; 
+    text-align: right;
+}
+
+.menu a {
+    font-size: 14px; /* Размер текста */
+    font-weight: bold; /* Жирный текст */
+    color: #3F1E54; /* Цвет текста (тёмно-фиолетовый) */
 }
 
 /* Футер */
