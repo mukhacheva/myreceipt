@@ -16,22 +16,21 @@
     overflow: hidden;
 }
 
-/* Шапка */
 header, .header2 {
-    min-height: 50px; /* Устанавливаем высоту шапки 50px */
-    display: flex; /* Используем flex для горизонтального выравнивания */
-    align-items: center; /* Центрируем элементы по вертикали */
-    justify-content: space-between; /* Распределяем элементы по краям */
-    padding: 0 20px; /* Отступы внутри шапки */
-    background: #A4B480; /* Цвет фона */
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: #A4B480;
 }
 
 .main {
-    display: flex; /* Используем flex для расположения двух блоков рядом */
+    display: flex;
     width: 100%;
-    height: 500px; /* Высота контейнера main */
-    justify-content: space-between; /* Распределяем элементы по краям */
-    padding: 10px 20px; /* Отступы внутри хедера */
+    height: 500px;
+    justify-content: space-between;
+    padding: 10px 20px;
     background: linear-gradient(to right, 
         #F6EEB6 33%, 
         #EFF5E4 33%, 
@@ -40,33 +39,33 @@ header, .header2 {
 }
 
 .main-content {
-    display: flex; /* Размещаем два блока рядом */
+    display: flex;
     justify-content: left;
     width: 100%;
-    height: 100%; /* Растягиваем на всю высоту контейнера main */
+    height: 100%;
 }
 
 .main-content2 {
-    width: 67%; /* Ширина на 67% экрана */
+    width: 67%;
     display: flex;
-    justify-content: center; /* Центрируем текст по горизонтали */
-    align-items: center; /* Центрируем текст по вертикали */
+    justify-content: center;
+    align-items: center;
     font-family: 'Balsamiq Sans', sans-serif;
     color: #3F1E54;
-    justify-content: center; /* Центрируем ссылки */
+    justify-content: center;
     margin-left: 25px;
     position: relative;
-    top: 0; /* Меню будет фиксированным в пределах родителя */
+    top: 0;
 }
 
 .time-list {
-    width: 33%; /* Ширина на 33% экрана */
+    width: 33%;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Центрируем по вертикали */
-    align-items: center; /* Центрируем по горизонтали */
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    height: 100%; /* Растягиваем высоту на весь экран */
+    height: 100%;
     gap: 40px; 
 }
 
@@ -75,54 +74,54 @@ header, .header2 {
     font-size: 16px;
     font-weight: bold;
     color: #3F1E54;
-    margin: 0; /* Убираем маргины для выравнивания */
+    margin: 0;
 }
 
 .time-line {
-    width: 100vw; /* Ширина линии на всю ширину экрана */
-    height: 0.5px; /* Толщина линии */
-    background-color: black; /* Черный цвет линии */
-    margin: 10px 0; /* Отступы сверху и снизу для линии */
-    position: relative; /* Чтобы линии не перекрывали текст */
-    left: 100%; /* Смещаем линию влево */
+    width: 100vw;
+    height: 0.5px;
+    background-color: black;
+    margin: 10px 0;
+    position: relative;
+    left: 100%;
     margin-left: 70px;
 }
 
 .menu {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Центрируем по вертикали */
-    align-items: center; /* Центрируем по горизонтали */
+    justify-content: center;
+    align-items: center;
     flex: 2;
-    justify-content: center; /* Центрируем ссылки */
-    gap: 75px; /* Пробелы между ссылками */
+    justify-content: center;
+    gap: 75px;
     margin: 0;
 }
 
 .menu a {
-    font-size: 14px; /* Размер текста */
-    font-weight: bold; /* Жирный текст */
-    color: #3F1E54; /* Цвет текста (тёмно-фиолетовый) */
+    font-size: 14px;
+    font-weight: bold;
+    color: #3F1E54;
     position: relative;
 }
 
 .menu a::before {
-    content: "·"; /* Символ точки */
-    font-size: 28px; /* Увеличиваем размер точки */
-    font-weight: bold; /* Толще */
-    color: #3F1E54; /* Цвет точки */
-    position: absolute; /* Абсолютное позиционирование для правильного размещения */
-    left: -10px; /* Размещаем точку слева от текста */
-    top: 50%; /* Центрируем по вертикали относительно текста */
-    transform: translateY(-50%); /* Центрируем точку */
+    content: "·";
+    font-size: 28px;
+    font-weight: bold;
+    color: #3F1E54;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .knopka {
     position: relative;
-    margin-top: 10px; /* Отступ сверху, чтобы кнопка была немного ниже */
+    margin-top: 10px;
     font-size: 15px;
     cursor: pointer;
-    align-self: center; /* Центрируем кнопку по горизонтали */
+    align-self: center;
 }
 
 .dropdown-menu {
@@ -134,11 +133,11 @@ header, .header2 {
     background-color: #C4D59B;
     padding: 10px;
     z-index: 999;
-    width: 80%; 
+    width: 80%;
     box-shadow: 
-        8px 0 16px rgba(0, 0, 0, 0.3), /* Тень справа */
-        -8px 0 16px rgba(0, 0, 0, 0.3), /* Тень слева */
-        0 8px 16px rgba(0, 0, 0, 0.3); /* Тень снизу */
+        8px 0 16px rgba(0, 0, 0, 0.3),
+        -8px 0 16px rgba(0, 0, 0, 0.3),
+        0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .dropdown-menu a {
@@ -153,20 +152,20 @@ header, .header2 {
 }
 
 .dropdown-menu1 {
-    display: none; /* Скрыто по умолчанию */
-    position: absolute; /* Абсолютное позиционирование */
-    top: 50px; /* Расположение ниже кнопки */
-    left: 50%; /* Центрирование меню */
-    transform: translateX(-50%); /* Смещаем влево на половину ширины */
-    width: 800px; /* Ширина меню */
-    background-color: #EFF5E4; /* Фон меню */
-    padding: 30px; /* Внутренние отступы */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
-    z-index: 10; /* Поверх других элементов */
-    display: flex; /* Используем flexbox для выравнивания */
-    flex-direction: column; /* Вертикальное расположение */
-    align-items: center; /* Центрирование по горизонтали */
-    gap: 30px; /* Расстояние между ссылками */
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    background-color: #EFF5E4;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 
 .dropdown-menu1 a {
@@ -181,36 +180,34 @@ header, .header2 {
 }
 
 .space {
-  margin-right: 30px; /* Добавляем пробел после определённых слов */
+  margin-right: 30px;
 }
 
 .column {
-    display: flex; /* Включаем flexbox для горизонтального размещения колонок */
-    justify-content: center; /* Центрируем все колонки горизонтально */
-    gap: 25px; /* Расстояние между колонками */
-    padding: 15px; /* Отступы вокруг содержимого */
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
 }
 
 .column > div {
-    display: flex; /* Включаем flexbox для вертикального размещения элементов */
-    flex-direction: column; /* Располагаем элементы внутри колонки сверху вниз */
-    gap: 10px; /* Расстояние между элементами в колонке */
-    align-items: center; /* Центрируем элементы внутри колонки горизонтально */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
 
-
-/* Футер */
 .footer {
-    height: 50px; /* Устанавливаем высоту футера 50px */
-    display: flex; /* Используем flex для горизонтального выравнивания */
-    align-items: center; /* Центрируем элементы по вертикали */
-    justify-content: space-between; /* Распределяем элементы по краям */
-    padding: 0 20px; /* Отступы внутри футера */
-    background: #A4B480; /* Цвет фона */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: #A4B480;
 }
 
 @media screen and (max-width: 1000px) {
     .menu {
-        gap: 60px; /* Пробелы между ссылками при уменьшении экрана */
+        gap: 60px;
     }
 }
