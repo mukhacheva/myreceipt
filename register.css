@@ -109,7 +109,8 @@ img {
     width: 640px;
     height: 400px;
     padding: 40px 0;
-    max-width: 100%; /* Чтобы контейнер не выходил за границы на меньших экранах */
+    max-width: 100%;
+    text-align: center; /* Для центрирования текста */
 }
 
 .block {
@@ -127,6 +128,8 @@ img {
     color: #3F1E54;
     margin-bottom: 10px;
 }
+
+
 
 .footer {
     display: flex;
