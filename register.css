@@ -1,13 +1,38 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #A4B480;
+    margin-bottom: 0;
+    width: 100%; /* Гарантируем, что header не выйдет за пределы */
+    box-sizing: border-box; /* Учитываем padding в общей ширине */
 }
 
 .header2 {
+    min-height: 50px;
     display: flex;
     width: 100%;
-    min-height: 60px;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
@@ -16,13 +41,58 @@
     overflow: hidden;
 }
 
-header, .header2 {
-    min-height: 50px;
+.header__logo {
+    flex: 1;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 800;
+    color: #3F1E54;
+}
+
+.nav {
+    flex: 2;
+    text-align: center;
+}
+
+.topnav {
     display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.topnav a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #3F1E54;
+}
+
+.topnav a:hover {
+    border-bottom: 3px solid #3F1E54;
+    text-decoration: none;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.auth-links {
+    flex: 1;
+    text-align: right;
+}
+
+.auth-links a {
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3F1E54;
+    text-transform: uppercase;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    background: #A4B480;
+    width: 100%;
 }
 
 .main {
@@ -30,17 +100,118 @@ header, .header2 {
     height: 500px;
 }
 
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 640px;
+    height: 400px;
+    padding: 40px 0;
+}
+
+.block {
+    height: 100%;
+    background-color: rgba(164, 180, 128, 0.5);
+}
+
+.block-item {
+    text-align: center;
+}
+
+.block-item__title {
+    font-size: 1.2rem;
+    font-weight: bold; /* Исправлено с "bald" */
+    color: #3F1E54;
+    margin-bottom: 10px;
+}
+
 .footer {
-    height: 50px;
     display: flex;
+    height: 30px;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 10px 20px;
     background: #A4B480;
 }
 
-@media screen and (max-width: 1000px) {
-    .menu {
-        gap: 60px;
+.topnav_footer1 {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+
+.topnav_footer1 a img {
+    height: 20px;
+    width: 20px;
+}
+
+.topnav_footer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-right: 40px;
+}
+
+.topnav_footer a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #3F1E54;
+}
+
+.topnav_footer2 {
+    text-align: right;
+}
+
+.topnav_footer2 a {
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3F1E54;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1010px) {
+    .topnav a {
+        display: none;
+    }
+
+    .topnav a.icon {
+        display: block;
+        font-size: 25px;
+        color: #3F1E54;
+    }
+
+    .topnav.responsive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(164, 180, 128, 0.85);
+        z-index: 1;
+    }
+
+    .topnav.responsive a {
+        display: block;
+        padding: 20px 0;
+        font-size: 24px;
+        color: #3F1E54;
+        text-align: center;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        color: #3F1E54;
     }
 }
