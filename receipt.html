@@ -33,35 +33,26 @@
 <div class="ingridients">
 
     <div class="photo">
-        <img src="catfood.jpg">
+        <img id="recipe-image" src="catfood.jpg" alt="Фото блюда">
+
     </div>
 
     <div class="ingrid">
-
         <div class="name">
-            <p>Название блюда</p>
+            <p id="recipe-name">Название блюда</p>
         </div>
-        <h3>Ингридиенты:</h3>
-        <p>Ингридиент 1</p>
-        <p>Ингридиент 2</p>
-        <p>Ингридиент 3</p>
-        <p>Ингридиент 4</p>
-        <p>Ингридиент 5</p>
-        <p>Ингридиент 6</p>
-        <div class="chanks">
-
+        <h3>ингредиенты:</h3>
+            <div id="ingredients-list">
         </div>
     </div>
 </div>
 
 <div class="receipt">
-    <h3>Шаги</h3>
-    <p>Шаг 1</p>
-    <p>Шаг 2</p>
-    <p>Шаг 3</p>
-    <p>Шаг 4</p>
-    <p>Шаг 5</p>
-</div>
+        <h3>шаги</h3>
+        <div id="steps-list">
+            <!-- Шаги будут вставляться сюда -->
+        </div>
+    </div>
 
 </main>
 
@@ -85,5 +76,46 @@
     </div>
 </div>
 <script src="script.js"></script>
+
+<script>
+
+// Функция для загрузки данных рецепта из файла JSON
+fetch('recipes.json')
+    .then(response => response.json())
+    .then(data => {
+        // В данном случае загружаем первый рецепт
+        const recipe = data[0];
+
+        // Получаем элементы на странице
+        const recipeNameElement = document.getElementById("recipe-name");
+        const recipeImageElement = document.getElementById("recipe-image");
+        const ingredientsListElement = document.getElementById("ingredients-list");
+        const stepsListElement = document.getElementById("steps-list");
+
+        // Заполняем страницу данными из JSON
+        recipeNameElement.innerText = recipe.name;
+        recipeImageElement.src = recipe.image;
+
+        // Отображаем ингредиенты
+        ingredientsListElement.innerHTML = "";
+        recipe.ingredients.forEach(ingredient => {
+            const ingredientItem = document.createElement("p");
+            ingredientItem.innerText = ingredient;
+            ingredientsListElement.appendChild(ingredientItem);
+        });
+
+        // Отображаем шаги
+        stepsListElement.innerHTML = "";
+        recipe.steps.forEach(step => {
+            const stepItem = document.createElement("p");
+            stepItem.innerText = step;
+            stepsListElement.appendChild(stepItem);
+        });
+    })
+    .catch(error => {
+        console.error("Ошибка при загрузке данных рецепта:", error);
+    });
+</script>
+
 </body>
 </html>
