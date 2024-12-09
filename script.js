@@ -36,3 +36,13 @@ signInBtn.addEventListener('click', function () {
     formBox.classList.remove('active');
     main.classList.remove('active');
 });
+
+document.querySelector('.signin-link').addEventListener('click', function() {
+    formBox.classList.remove('active');
+    main.classList.remove('active');
+});
+
+document.querySelector('.signup-link').addEventListener('click', function() {
+    formBox.classList.add('active');
+    main.classList.add('active');
+});

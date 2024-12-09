@@ -105,6 +105,10 @@ header {
     background-color: #C1D39E;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 img {
     display: block;
     width: 100%;
