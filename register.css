@@ -89,12 +89,20 @@ header {
 }
 
 .main {
-    margin: 0;
-    height: 500px;
+    position: relative; /* Установим относительное позиционирование */
     display: flex;
     justify-content: center;
     align-items: center;
     background: #EFF5E4;
+    height: 500px; /* Ограничиваем высоту main */
+    margin: 0 auto;
+    overflow: hidden; /* Ограничиваем видимость дочерних элементов */
+
+    transition: 0.5s;
+}
+
+.main.active {
+    background-color: #C1D39E;
 }
 
 img {
@@ -110,13 +118,14 @@ img {
     height: 400px;
     padding: 40px 0;
     max-width: 100%;
-    text-align: center; /* Для центрирования текста */
+    text-align: center; 
+    position: relative;
 }
 
 .block {
     height: 100%;
     background-color: rgba(164, 180, 128, 0.5);
-    
+
     display: flex;
     align-items: center;
 
@@ -146,6 +155,24 @@ img {
     color: #3F1E54;
     font-size: 14px;
     font-weight: bold;
+}
+
+.form-box {
+    background-color: #D0DCB2;
+    height: 100%;
+    width: 50%;
+    box-shadow: 0 5px 45px rgbs(0, 0, 0, 0.25);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    transition: 0.5s ease-in-out;
+}
+
+.form-box.active {
+    left: 50%;
 }
 
 .footer {

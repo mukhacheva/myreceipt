@@ -21,3 +21,18 @@ document.addEventListener("click", function (event) {
         }
     });
 });
+
+const signInBtn = document.querySelector('.signin-btn');
+const signUpBtn = document.querySelector('.signup-btn');
+const formBox = document.querySelector('.form-box');
+const main = document.querySelector('.main'); 
+
+signUpBtn.addEventListener('click', function () {
+    formBox.classList.add('active');
+    main.classList.add('active');
+});
+
+signInBtn.addEventListener('click', function () {
+    formBox.classList.remove('active');
+    main.classList.remove('active');
+});
