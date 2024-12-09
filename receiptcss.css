@@ -17,6 +17,85 @@ body {
     font-style: normal;
 }
 
+/* Стили для контейнера main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #F6EEB6;
+}
+
+/* Стили для контейнера ingridients */
+.ingridients {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Стили для фотографии */
+.photo img {
+    width: 250px; /* Уменьшаем размер изображения */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #F6EEB6;
+}
+
+/* Стили для списка ингридиентов */
+.ingrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 20px;
+    width: 60%; /* Делаем список ингридиентов шире */
+}
+
+/* Стили для названия блюда */
+.name p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #F6EEB6;
+}
+
+/* Стили для списка ингридиентов */
+.ingrid h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ingrid p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Стили для контейнера рецепта */
+.receipt {
+    background-color: #F6EEB6;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    margin-top: 20px;
+}
+
+/* Стили для заголовков рецепта */
+.receipt h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Стили для шагов рецепта */
+.receipt p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
 header {
     display: flex;
     height: 30px;
@@ -25,8 +104,6 @@ header {
     padding: 10px 20px;
     background: #A4B480;
     margin-bottom: 0;
-    width: 100%; /* Гарантируем, что header не выйдет за пределы */
-    box-sizing: border-box; /* Учитываем padding в общей ширине */
 }
 
 .header2 {
@@ -88,25 +165,10 @@ header {
     text-transform: uppercase;
 }
 
-.main {
-    position: relative; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+main {
+    min-height: 100vh;
     background: #EFF5E4;
-    height: 500px; 
-    margin: 0 auto;
-    overflow: hidden; 
-
-    transition: 0.5s;
-}
-
-.main.active {
-    background-color: #C1D39E;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 img {
@@ -117,131 +179,6 @@ img {
     padding: 0;
 }
 
-.container {
-    width: 640px;
-    height: 400px;
-    padding: 40px 0;
-    max-width: 100%;
-    text-align: center; 
-    position: relative;
-}
-
-.block {
-    height: 100%;
-    background-color: rgba(164, 180, 128, 0.5);
-
-    display: flex;
-    align-items: center;
-
-}
-
-.block__item {
-    width: 50%;
-    box-sizing: border-box;
-}
-
-.block-item {
-    text-align: center;
-}
-
-.block-item__title {
-    font-size: 1.2rem;
-    font-weight: bold; 
-    color: #3F1E54;
-    margin-bottom: 10px;
-}
-
-.block-item__btn {
-    border: none;
-    cursor: pointer;
-    padding: 10px 20px;
-    background-color: #EFF5E4;
-    color: #3F1E54;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-
-.form-box.active {
-    left: 50%;
-}
-
-.form-box {
-    background-color: #D0DCB2;
-    height: 100%;
-    width: 50%;
-    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    transition: 0.5s ease-in-out;
-
-    display: flex;
-    align-items: center;
-
-    overflow: hidden;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    height: 100%;
-    width: 100%;
-
-    position: absolute;
-
-    transition: 0.5s;
-}
-
-.form_signin {
-    left: 0;
-    transition-delay: 0.25s;
-}
-
-.form_signup {
-    left: 100%;
-    transition-delay: 0s;
-}
-
-.form-box.active .form_signin {
-    left: -100%;
-    transition-delay: 0s;
-}
-
-.form-box.active .form_signup {
-    left: 0;
-    transition-delay: 0.25s;
-}
-.form__title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #3F1E54;
-    margin-bottom: 20px;
-}
-
-.form__input {
-    width: 80%; /* Ограничиваем ширину инпутов */
-    padding: 10px;
-    margin: 10px 0;
-}
-
-.form__btn {
-    border: none;
-    cursor: pointer;
-    font-size: inherit;
-    background-color: #A4B480;
-    color: #fff;
-    padding: 10px 50px;
-}
-
-.form__forgot {
-    font-size: 14px;
-    color: #3F1E54;
-    margin-top: 10px;
-}
 
 
 .footer {
