@@ -17,7 +17,6 @@ body {
     font-style: normal;
 }
 
-/* Стили для контейнера main */
 main {
     display: flex;
     flex-direction: column;
@@ -33,54 +32,68 @@ main {
     align-items: flex-start;
     width: 80%;
     padding: 20px;
-    border-radius: 8px;
     margin-bottom: 20px;
 }
 
-/* Стили для фотографии */
-.photo img {
-    width: 250px; /* Уменьшаем размер изображения */
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #F6EEB6;
+.photo {
+    width: 250px; 
+    height: 250px;
+    background-color: #F6EEB6; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 4px; /* Внутренний отступ */
 }
 
-/* Стили для списка ингридиентов */
+.photo img {
+    max-width: 100%;  
+    max-height: 100%; 
+    object-fit: contain; 
+}
+
 .ingrid {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 20px;
-    width: 60%; /* Делаем список ингридиентов шире */
+    width: 60%; 
+    color: #3F1E54;
 }
 
-/* Стили для названия блюда */
 .name p {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 10px;
-    background-color: #F6EEB6;
+    margin: 0 auto; 
+    padding: 5px 10px; 
+    background-color: #F6EEB6; 
+    display: inline-block; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 45px !important; 
+    color: #3F1E54;
 }
+
 
 /* Стили для списка ингридиентов */
 .ingrid h3 {
     font-size: 20px;
     margin-bottom: 10px;
+    color: #3F1E54;
 }
 
 .ingrid p {
     font-size: 16px;
     margin: 5px 0;
+    color: #3F1E54;
 }
 
 /* Стили для контейнера рецепта */
 .receipt {
     background-color: #F6EEB6;
     padding: 20px;
-    border-radius: 8px;
     width: 80%;
     margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Стили для заголовков рецепта */
@@ -88,12 +101,14 @@ main {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #3F1E54;
 }
 
 /* Стили для шагов рецепта */
 .receipt p {
     font-size: 16px;
     margin: 5px 0;
+    color: #3F1E54;
 }
 
 header {
