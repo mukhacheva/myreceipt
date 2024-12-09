@@ -116,6 +116,15 @@ img {
 .block {
     height: 100%;
     background-color: rgba(164, 180, 128, 0.5);
+    
+    display: flex;
+    align-items: center;
+
+}
+
+.block__item {
+    width: 50%;
+    box-sizing: border-box;
 }
 
 .block-item {
@@ -129,7 +138,15 @@ img {
     margin-bottom: 10px;
 }
 
-
+.block-item__btn {
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #EFF5E4;
+    color: #3F1E54;
+    font-size: 14px;
+    font-weight: bold;
+}
 
 .footer {
     display: flex;
