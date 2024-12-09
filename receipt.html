@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>рецепты</title>
+    <title>Рецепты</title>
     <link rel="stylesheet" href="receiptcss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,35 +27,33 @@
 </header>
     <img src="1.JPG" style="position: relative">
 
-
 <main>
 
-<div class="ingridients">
+    <div class="ingridients">
 
-    <div class="photo">
-        <img id="recipe-image" src="catfood.jpg" alt="Фото блюда">
-
-    </div>
-
-    <div class="ingrid">
-        <div class="name">
-            <p id="recipe-name">Название блюда</p>
+        <div class="photo">
+            <img id="recipe-image" alt="Фото блюда">
         </div>
-        <h3>ингредиенты:</h3>
+
+        <div class="ingrid">
+            <div class="name">
+                <p id="recipe-name">Название блюда</p>
+            </div>
+            <h3>Ингредиенты:</h3>
             <div id="ingredients-list">
+                <!-- Ингредиенты будут вставляться сюда -->
+            </div>
         </div>
     </div>
-</div>
 
-<div class="receipt">
-        <h3>шаги</h3>
+    <div class="receipt">
+        <h3>Шаги</h3>
         <div id="steps-list">
             <!-- Шаги будут вставляться сюда -->
         </div>
     </div>
 
 </main>
-
 
 <div class="footer">
     <div class="topnav_footer1">
@@ -71,14 +69,12 @@
             <a href="https://tilda.cc/ru/privacy-generator/">Политика конфиденциальности</a>
         </div>
     </nav>
-        <div class="topnav_footer2">
+    <div class="topnav_footer2">
         <a href="https://youtu.be/Tmr-BUALxLg?si=utxfu5b5PZQCK0aU">FAQ</a>
     </div>
 </div>
-<script src="script.js"></script>
 
 <script>
-
 // Функция для загрузки данных рецепта из файла JSON
 fetch('recipes.json')
     .then(response => response.json())
