@@ -16,7 +16,7 @@
         <div class="topnav" id="myTopnav">
             <a href="index.html#section2">ГЛАВНАЯ</a>
             <a href="index2.html">РЕЦЕПТЫ</a>
-            <a href="#">ЛАЙФХАКИ</a>
+            <a href="#">ПРЕДЛОЖИТЬ РЕЦЕПТ</a>
             <a href="#" id="menu" class="icon">&#9776;</a>
         </div>
     </nav>
@@ -25,7 +25,7 @@
         <a href="register.html#signup" class="signup-link">РЕГИСТРАЦИЯ</a>
     </div>
 </header>
-    <img src="1.JPG" style="position: relative">
+<img src="1.JPG" style="position: relative">
 
 <main>
 
@@ -75,42 +75,102 @@
 </div>
 
 <script>
-// Функция для загрузки данных рецепта из файла JSON
-fetch('recipes.json')
-    .then(response => response.json())
-    .then(data => {
-        // В данном случае загружаем первый рецепт
-        const recipe = data[0];
+// Рецепты в формате JSON
+const recipes = {
+    "pancake": {
+        "name": "блины на кефире",
+        "image": "imag/pancakes_on_kefir.jpg",
+        "ingredients": ["· 2 стакана кефира", "· 1,5 стакана муки", "· 2 яйца", "· 3 столовые ложки сахара (или по вкусу)", "· 1/2 чайной ложки соли", "· 1 чайная ложка соды",
+            "· 2 столовые ложки растительного масла", "· 1/2 стакана кипятка", "· немного ванилина (по желанию)"
+        ],
+        "steps": [
+            "1. в большую миску налейте кефир и слегка подогрейте его до тёплого состояния, но не перегревайте.",
+            "2. добавьте яйца, сахар и соль в кефир. перемешайте венчиком или миксером до однородной массы.",
+            "3. постепенно добавляйте просеянную муку, продолжая перемешивать, чтобы избежать образования комочков.",
+            "4. в маленькую ёмкость добавьте соду и залейте её кипятком (сода начнёт шипеть). быстро влейте эту смесь в тесто и тщательно перемешайте.",
+            "5. добавьте растительное масло и ванилин (если используете). перемешайте ещё раз. тесто должно получиться жидким, как густые сливки.",
+            "6. нагрейте сковороду с антипригарным покрытием или обычную сковороду, слегка смазанную растительным маслом, на среднем огне.",
+            "7. наливайте небольшое количество теста на центр сковороды, затем равномерно распределите его, наклоняя сковороду в разные стороны.",
+            "8. жарьте блины до появления пузырьков на поверхности и до золотистого цвета снизу (примерно 1–2 минуты). переверните блин и жарьте ещё около 30 секунд.",
+            "9. повторяйте, пока не закончится всё тесто. при необходимости смазывайте сковороду маслом.",
+            "10. готовые блины складывайте стопкой на тарелку. при желании смажьте их сливочным маслом, чтобы они были ещё мягче.",
+            "11. подавайте блины с мёдом, вареньем, сгущённым молоком или сметаной по вкусу."
+        ]
+    },
+    "banana-cake": {
+        "name": "банановый кекс в микроволновке",
+        "image": "imag/bananacake.jpg",
+        "ingredients": ["· 1 спелый банан (размять вилкой)", "· 3 столовые ложки муки", "· 2 столовые ложки сахара (или по вкусу)", 
+            "· 1 яйцо", "· 2 столовые ложки молока", "· 1 столовая ложка растительного масла", 
+            "· ½ чайной ложки разрыхлителя", "· щепотка соли", "· немного ванилина или корицы (по желанию)"],
+        "steps": [
+            "1. очистите банан и разомните его вилкой в миске до состояния пюре.",
+            "2. добавьте яйцо, молоко и растительное масло к банановому пюре. перемешайте до однородной массы.",
+            "3. в эту же миску добавьте муку, сахар, разрыхлитель, соль и ванилин/корица (если используете). перемешайте тесто до однородной консистенции, чтобы не было комочков.",
+            "4. выберите подходящую кружку, которая подходит для микроволновки, и смажьте её стенки небольшим количеством масла. вылейте тесто в кружку, заполняя её примерно на ¾ объема (тесто поднимется).",
+            "5. поставьте кружку в микроволновку и готовьте на максимальной мощности 1,5–2 минуты. время может варьироваться в зависимости от мощности вашей микроволновки, поэтому следите за процессом.",
+            "6. проткните кекс зубочисткой или вилкой. если она выходит сухой, кекс готов. если нет, добавьте еще 10–15 секунд.",
+            "7. дайте кексу немного остыть (он будет очень горячим сразу после готовки). при желании украсьте его сахарной пудрой, шоколадом или орехами."
+        ]
+    },
+    "bruschetta_tomato_basil": {
+        "name": "брускетты с помидорами и базиликом",
+        "image": "imag/3r.jpg",
+        "ingredients": ["· 1 багет или чиабатта", "· 3–4 спелых помидора", "· 2 зубчика чеснока", "· несколько веточек свежего базилика", "· 2–3 столовые ложки оливкового масла",
+            "· соль по вкусу", "· свежемолотый чёрный перец по вкусу"
+        ],
+        "steps": [
+            "1. нарежьте багет или чиабатту на ломтики толщиной около 1,5 см.",
+            "2. подсушите ломтики на сухой сковороде, гриле или в духовке до золотистого цвета.",
+            "3. разрежьте зубчик чеснока пополам и натрите им горячие ломтики хлеба для аромата.",
+            "4. помидоры нарежьте маленькими кубиками. удалите лишний сок и семена, чтобы начинка не была слишком жидкой.",
+            "5. мелко нарежьте листья базилика и добавьте их к помидорам.",
+            "6. добавьте в смесь оливковое масло, соль и чёрный перец. тщательно перемешайте.",
+            "7. выкладывайте томатно-базиликовую смесь на подготовленные ломтики хлеба.",
+            "8. сразу подавайте брускетты к столу. при желании украсьте их дополнительными листьями базилика."
+        ]
+    }
+};
 
-        // Получаем элементы на странице
-        const recipeNameElement = document.getElementById("recipe-name");
-        const recipeImageElement = document.getElementById("recipe-image");
-        const ingredientsListElement = document.getElementById("ingredients-list");
-        const stepsListElement = document.getElementById("steps-list");
+// Получение параметра recipe из URL
+const params = new URLSearchParams(window.location.search);
+const recipeKey = params.get('recipe');
 
-        // Заполняем страницу данными из JSON
-        recipeNameElement.innerText = recipe.name;
-        recipeImageElement.src = recipe.image;
+// Получаем элементы страницы
+const recipeNameElement = document.getElementById("recipe-name");
+const recipeImageElement = document.getElementById("recipe-image");
+const ingredientsListElement = document.getElementById("ingredients-list");
+const stepsListElement = document.getElementById("steps-list");
 
-        // Отображаем ингредиенты
-        ingredientsListElement.innerHTML = "";
-        recipe.ingredients.forEach(ingredient => {
-            const ingredientItem = document.createElement("p");
-            ingredientItem.innerText = ingredient;
-            ingredientsListElement.appendChild(ingredientItem);
-        });
+// Если рецепт найден, отображаем его
+if (recipes[recipeKey]) {
+    const recipe = recipes[recipeKey];
 
-        // Отображаем шаги
-        stepsListElement.innerHTML = "";
-        recipe.steps.forEach(step => {
-            const stepItem = document.createElement("p");
-            stepItem.innerText = step;
-            stepsListElement.appendChild(stepItem);
-        });
-    })
-    .catch(error => {
-        console.error("Ошибка при загрузке данных рецепта:", error);
+    recipeNameElement.innerText = recipe.name;
+    recipeImageElement.src = recipe.image;
+
+    // Отображаем ингредиенты
+    ingredientsListElement.innerHTML = "";
+    recipe.ingredients.forEach(ingredient => {
+        const ingredientItem = document.createElement("p");
+        ingredientItem.innerText = ingredient;
+        ingredientsListElement.appendChild(ingredientItem);
     });
+
+    // Отображаем шаги
+    stepsListElement.innerHTML = "";
+    recipe.steps.forEach(step => {
+        const stepItem = document.createElement("p");
+        stepItem.innerText = step;
+        stepsListElement.appendChild(stepItem);
+    });
+} else {
+    // Если рецепт не найден
+    recipeNameElement.innerText = "Рецепт не найден";
+    recipeImageElement.src = "";
+    ingredientsListElement.innerHTML = "<p>Нет доступных ингредиентов.</p>";
+    stepsListElement.innerHTML = "<p>Нет шагов приготовления.</p>";
+}
 </script>
 
 </body>
