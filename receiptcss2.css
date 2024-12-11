@@ -111,18 +111,41 @@ main {
     color: #3F1E54;
 }
 
-.button1 {
-    margin-top: 15px;
+/* Стили для контейнера советов */
+.hacks {
+    background-color: #F6CBB6;
+    padding: 20px;
+    width: 80%;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.button1 a {
+/* Стили для заголовков советов */
+.hacks h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #3F1E54;
+}
+
+/* Стили для текста советов */
+.hacks p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #3F1E54;
+}
+
+.button {
+    margin-top: 15px;
     font-size: 25px;
     color: #3F1E54;
     cursor: pointer;
-    text-decoration: none;  /* Убирает подчеркивание */
 }
 
-
+.button a {
+    text-decoration: none;  /* Убирает подчеркивание */
+    color: inherit; 
+}
 header {
     display: flex;
     height: 30px;
