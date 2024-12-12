@@ -146,6 +146,7 @@ main {
     text-decoration: none;  /* Убирает подчеркивание */
     color: inherit; 
 }
+
 header {
     display: flex;
     height: 30px;

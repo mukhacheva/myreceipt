@@ -113,15 +113,15 @@ main {
 
 .button1 {
     margin-top: 15px;
-}
-
-.button1 a {
     font-size: 25px;
     color: #3F1E54;
     cursor: pointer;
-    text-decoration: none;  /* Убирает подчеркивание */
 }
 
+.button1 a {
+    text-decoration: none;  /* Убирает подчеркивание */
+    color: inherit; 
+}
 
 header {
     display: flex;
